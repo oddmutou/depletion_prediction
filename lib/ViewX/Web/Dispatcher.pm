@@ -38,7 +38,7 @@ sub dispatch {
     my $method = $match->{action};
     Plack::Util::load_class($controller_class);
     my $controller = $controller_class->new(request => $request);
-    $controller->$method($request);
+    $controller->$method();
 };
 
 1;

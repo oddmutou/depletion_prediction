@@ -1,5 +1,9 @@
 requires 'perl', '5.022';
+requires 'Chart::Gnuplot';
 requires 'Class::Accessor::Lite';
+requires 'File::Slurp';
+requires 'Furl';
+requires 'JSON';
 requires 'Plack';
 requires 'Plack::Response';
 requires 'Plack::Request';
@@ -7,4 +11,5 @@ requires 'Plack::Util';
 requires 'Router::Simple';
 requires 'Smart::Args';
 requires 'Text::Xslate';
+requires 'Time::Piece';
 requires 'YAML::XS';
