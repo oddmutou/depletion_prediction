@@ -1,0 +1,10 @@
+requires 'perl', '5.022';
+requires 'Class::Accessor::Lite';
+requires 'Plack';
+requires 'Plack::Response';
+requires 'Plack::Request';
+requires 'Plack::Util';
+requires 'Router::Simple';
+requires 'Smart::Args';
+requires 'Text::Xslate';
+requires 'YAML::XS';
