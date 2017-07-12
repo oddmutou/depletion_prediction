@@ -1,4 +1,18 @@
 [% INCLUDE 'view/includes/header.html' WITH title = 'インデックス(目次)' -%]
 <h1>目次です。</h1>
-<p>仮のページです。</p>
+<p>
+<ul>
+    <li><a href="/">このページ</a></li>
+    <li><a href="/console">apiを使いやすくするためのページ?</a></li>
+</ul>
+</p>
+<h2>説明</h2>
+<p>
+mackerel(株式会社はてなさん)で管理しているサーバーのファイルシステムの枯渇予測をしたグラフの画像を返すAPIです。
+</p>
+<h2>使い方</h2>
+<p>
+/api?host=<strong>ホストid</strong>&drive=<strong>ドライブ名</strong><br>
+でグラフのpngファイルを得ることが出来ます。
+</p>
 [% INCLUDE 'view/includes/footer.html' -%]

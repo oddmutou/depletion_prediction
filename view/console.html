@@ -1,4 +1,29 @@
 [% INCLUDE 'view/includes/header.html' WITH title = 'コンソール' -%]
 <h1>コンソール</h1>
-<p>仮のページです。</p>
+<div>
+    <form name="main">
+        hostid(https://mackerel.io/orgs/hogehoge/hosts/XXXXXXXXXXX←これ)<br>
+        <input name="host" size="80" type="text"><br>
+        <br>
+        ドライブ名<br>
+        <input name="drive" size="80" type="text"><br>
+        <br>
+    </form>
+    <button onclick="view();">Enter</button>
+</div>
+
+<div id="view_image">
+</div>
+
+<script>
+function view()
+{
+    var form = document.forms.main;
+    var new_element = document.createElement("div");
+    new_element.innerHTML = '<img src="/api?host=' + form.host.value + '&drive=' + form.drive.value + '">';
+    var parent_object = document.getElementById("view_image");
+    parent_object.textContent = null;
+    parent_object.appendChild(new_element);
+}
+</script>
 [% INCLUDE 'view/includes/footer.html' -%]
